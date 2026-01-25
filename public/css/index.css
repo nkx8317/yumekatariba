@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/ballon-1.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  height: max-content;
+}
+
+/* header部分 */
+header {
+  display: flex;
+  padding: 10px 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-button {
+  padding: 8px 16px;
+  background-color: orange;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 48px;
+  border: 1px solid black;
+}
+
+.create-button>a {
+  text-decoration: none;
+  color: black;
+}
+
+.search-bar {
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 8px;
+  margin-left: 48px;
+}
+
+.search-button {
+  height: 40px;
+  width: 56px;
+  background-color: orange;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+
+/* 投稿部分 */
+.big-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-box {
+  margin-top: 48px;
+  margin-bottom: 70px;
+  margin-left: 24px;
+  margin-right: 24px;
+  /* height: 500px; */
+  width: calc(50% - 48px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.80) 0%), rgba(217, 217, 217, 0.80);
+}
+
+.profile-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px auto;
+  /* gap: 80px; */
+  width: 100%;
+}
+
+.name-link {
+  text-decoration: none;
+  color: black;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.image-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.occupation {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.post-content-cover {
+  width: 90%;
+  height: 80%;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.title {
+  /* width: 474px; */
+  padding: 12px;
+  font-size: calc(1.305rem + 0.66vw);
+}
+
+.contents {
+  padding: 8px;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.post-date {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.sns-icon {
+  font-size: 40px;
+  /* color: blue; */
+}
+
+.tags {
+  width: 475px;
+  padding: 8px;
+  /* text-align: center; */
+}
+
+.post-content {
+  /* width: 475px; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-button {
+  width: 80px;
+  height: 60px;
+}
+
+
+.buttons {
+  margin-top: 32px;
+  display: flex;
+  /* gap: 60px; */
+  justify-content: space-around;
+  width: 100%;
+}
+
+.edit-button {
+  padding: 8px 12px;
+  background-color: orange;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+
+.delete {
+  padding: 12px 12px;
+  color: #fff;
+  background-color: #C0C0C0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.delete:hover {
+  color: #000;
+  background-color: #C0C0C0;
+  border-color: #fff;
+}
+
+form {
+  margin: auto 0;
+}
+
+.bookmark {
+  display: flex;
+  align-items: center;
+}
+
+.bookmark-icon {
+  background-color: khaki;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+.comment-button {
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #B0E57C;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.comment-rink {
+  text-decoration: none;
+  color: black;
+  background-color: #87CEEB;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.comment-watch {
+  margin-bottom: 0;
+}
+
+.comment-box {
+  width: 400px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.comment-body {
+  border-top: 1px solid black;
+}
+
+.comment-name {
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+.comment-date {
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+.comment-text {
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+@media screen and (max-width: 780px) {
+  .big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+  }
+
+  .post-box {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-left {
+    order: 1;
+  }
+
+  .create-button {
+    order: 2;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .search-bar {
+    margin: 0;
+  }
+
+  .profile-box {
+    margin: 0;
+    margin: 10px 0;
+  }
+
+  .buttons {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .comment-rink {
+    margin: 0;
+    margin: 10px 0;
+  }
+}

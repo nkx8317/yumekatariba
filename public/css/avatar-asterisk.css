@@ -1,0 +1,4 @@
+/* プロフィール画像項目のみアスタリスクを非表示 */
+label[for="avatar"].col-form-label.text-md::after {
+    content: none;
+} 

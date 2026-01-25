@@ -1,0 +1,131 @@
+.content{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/backgroundmain.jpg)no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    color: #f0fdff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content:before{
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter:blur(5px);
+    -o-filter:blur(5px);
+    -ms-filter:blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.main-container{
+    padding: 150px 0;
+    letter-spacing: 10px;
+}
+
+.main-container > h1{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: serif;
+}
+
+.main-container > h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: serif;
+}
+
+@media screen and (max-width:780px) {
+    .main-container{
+        padding: 80px 0;
+        letter-spacing: 10px;
+        position: relative;
+        top: 170px;
+    }
+    .main-container > h1{
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: serif;
+    }
+
+    .main-container > h2{
+        font-size: 25px;
+        text-align: center;
+        font-family: serif;
+    }
+}
+
+.left-btn{
+    width: 300px;
+    font-size: 1.5rem;
+    border: 5px solid ;
+    display: inline-block;
+    background: url(../img/button-1.png)no-repeat center;
+    color: black;
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), rgba(217, 217, 217, 0.00);
+}
+
+.right-btn{
+    width: 300px;
+    font-size: 1.5rem;
+    border: 5px solid ;
+    display: inline-block;
+    background: url(../img/button-1.png)no-repeat center;
+    color: black;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), rgba(217, 217, 217, 0.00);
+  }
+
+@media screen and (max-width:780px) {
+    .left-btn{
+        width: 180px;
+        height: 40px;
+        margin: 20px;
+        font-size: 1.5rem;
+        border: 5px solid ;
+        display: inline-block;
+        background: url(../img/button-1.png)no-repeat center;
+        color: black;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), rgba(217, 217, 217, 0.00);
+        position: relative;
+        top: 210px;
+      }
+      
+      .right-btn{
+        width: 180px;
+        height: 40px;
+        margin: 20px;
+        font-size: 1.5rem;
+        border: 5px solid ;
+        display: inline-block;
+        background: url(../img/button-1.png)no-repeat center;
+        color: black;      
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), rgba(217, 217, 217, 0.00);
+        position: relative;
+        top: 270px;
+        }      
+}
